@@ -24,20 +24,20 @@
       "default": 0
     },
     "mpl": {
-      "type": "integer"
+      "type": "integer",
+      "default": 5
     },
     "order": {
       "type": "integer",
       "default": 10
     },
-    "barcode": {
-      "type": "component",
-      "repeatable": true,
-      "component": "barcodes.barcode"
-    },
     "category": {
       "model": "category",
       "via": "products"
+    },
+    "barcodes": {
+      "collection": "barcode",
+      "via": "product"
     }
   }
 }
