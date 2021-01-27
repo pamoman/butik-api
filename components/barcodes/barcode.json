@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_barcodes_barcodes",
+  "info": {
+    "name": "barcode",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "package": {
+      "type": "boolean",
+      "default": false
+    },
+    "package_size": {
+      "type": "integer",
+      "default": 10
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sales",
+  "info": {
+    "name": "sale"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "department": {
+      "model": "department"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "item-list.items"
+    },
+    "total": {
+      "type": "decimal"
+    }
+  }
+}

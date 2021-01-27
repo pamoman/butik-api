@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "default": 0
+    },
+    "stock": {
+      "type": "integer",
+      "default": 0
+    },
+    "mpl": {
+      "type": "integer"
+    },
+    "order": {
+      "type": "integer",
+      "default": 10
+    },
+    "barcode": {
+      "type": "component",
+      "repeatable": true,
+      "component": "barcodes.barcode"
+    },
+    "category": {
+      "model": "category",
+      "via": "products"
+    }
+  }
+}
