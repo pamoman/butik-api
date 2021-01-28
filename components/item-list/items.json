@@ -7,11 +7,15 @@
   },
   "options": {},
   "attributes": {
-    "product": {
-      "model": "product"
+    "name": {
+      "type": "string",
+      "required": true
     },
     "quantity": {
       "type": "integer"
+    },
+    "product": {
+      "model": "product"
     }
   }
 }

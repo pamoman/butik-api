@@ -29,7 +29,7 @@
     },
     "password": {
       "type": "password",
-      "minLength": 6,
+      "minLength": 4,
       "configurable": false,
       "private": true
     },
@@ -58,9 +58,6 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
-    },
-    "tag": {
-      "type": "biginteger"
     },
     "firstname": {
       "type": "string",
