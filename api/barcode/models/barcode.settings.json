@@ -15,14 +15,14 @@
       "type": "string",
       "required": true
     },
-    "quantity": {
+    "qty": {
       "type": "integer",
       "default": 1,
       "required": false
     },
     "product": {
-      "via": "barcodes",
-      "model": "product"
+      "model": "product",
+      "via": "barcodes"
     }
   }
 }
