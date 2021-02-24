@@ -11,9 +11,6 @@
     "draftAndPublish": false
   },
   "attributes": {
-    "department": {
-      "model": "department"
-    },
     "firstname": {
       "type": "string",
       "required": true
@@ -21,6 +18,11 @@
     "lastname": {
       "type": "string",
       "required": true
+    },
+    "Department": {
+      "type": "string",
+      "required": true,
+      "private": false
     },
     "items": {
       "type": "component",

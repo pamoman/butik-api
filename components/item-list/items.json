@@ -16,9 +16,6 @@
     },
     "price": {
       "type": "decimal"
-    },
-    "product": {
-      "model": "product"
     }
   }
 }
