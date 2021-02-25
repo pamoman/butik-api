@@ -19,7 +19,7 @@
       "type": "string",
       "required": true
     },
-    "Department": {
+    "department": {
       "type": "string",
       "required": true,
       "private": false
