@@ -12,10 +12,16 @@
       "required": true
     },
     "quantity": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "price": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
+    },
+    "subtotal": {
+      "type": "decimal",
+      "required": true
     }
   }
 }
