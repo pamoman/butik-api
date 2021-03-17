@@ -18,6 +18,10 @@
       "via": "department",
       "plugin": "users-permissions",
       "collection": "user"
+    },
+    "sales": {
+      "via": "department",
+      "collection": "sale"
     }
   }
 }

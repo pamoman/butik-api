@@ -61,11 +61,11 @@
     },
     "firstname": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "lastname": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "department": {
       "model": "department",

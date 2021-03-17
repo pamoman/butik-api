@@ -19,11 +19,6 @@
       "type": "string",
       "required": true
     },
-    "department": {
-      "type": "string",
-      "required": true,
-      "private": false
-    },
     "items": {
       "type": "component",
       "repeatable": true,
@@ -31,7 +26,12 @@
       "required": false
     },
     "total": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
+    },
+    "department": {
+      "model": "department",
+      "via": "sales"
     }
   }
 }
