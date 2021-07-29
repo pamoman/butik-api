@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "barcodes",
+  "info": {
+    "name": "barcode",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "qty": {
+      "type": "integer",
+      "default": 1,
+      "required": false
+    },
+    "product": {
+      "model": "product",
+      "via": "barcodes"
+    }
+  }
+}

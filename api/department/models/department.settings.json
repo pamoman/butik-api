@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "departments",
+  "info": {
+    "name": "department"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "users": {
+      "via": "department",
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "sales": {
+      "via": "department",
+      "collection": "sale"
+    }
+  }
+}

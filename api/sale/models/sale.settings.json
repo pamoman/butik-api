@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sales",
+  "info": {
+    "name": "sale",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "firstname": {
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "type": "string",
+      "required": true
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "item-list.items",
+      "required": false
+    },
+    "total": {
+      "type": "decimal",
+      "required": true
+    },
+    "department": {
+      "model": "department",
+      "via": "sales"
+    }
+  }
+}
